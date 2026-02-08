@@ -13,8 +13,9 @@ Kohi is an Expo (v54) + React Native (0.81) cross-platform mobile app targeting 
 - `npm run ios` — Start on iOS simulator
 - `npm run web` — Start web dev server
 - `npm run lint` — Run ESLint (via `expo lint`)
-
-No test framework is currently configured.
+- `npm test` — Run tests (Jest)
+- `npm run test:watch` — Run tests in watch mode
+- `npm run test:coverage` — Run tests with coverage report
 
 ## Architecture
 
@@ -51,6 +52,10 @@ Light/dark mode is driven by `useColorScheme()` from React Native. Theme colors 
 - `expo-image` for image loading
 - `expo-web-browser` for in-app browser on native
 - `react-native-web` for web platform support
+
+### Testing
+
+Jest with `jest-expo` preset and `@testing-library/react-native`. Config in `jest.config.js`, setup/mocks in `jest.setup.ts`. Tests use `__tests__/` directories alongside source (e.g. `components/__tests__/`).
 
 ### ESLint
 
