@@ -17,6 +17,10 @@ Kohi is an Expo (v54) + React Native (0.81) cross-platform mobile app targeting 
 - `npm run test:watch` — Run tests in watch mode
 - `npm run test:coverage` — Run tests with coverage report
 
+## Documentation Lookup
+
+Always use Context7 MCP tools (`resolve-library-id` then `query-docs`) to fetch up-to-date documentation before implementing features, debugging issues, or answering questions about any library or framework used in this project. Do not rely on training data for API details — query Context7 first.
+
 ## Architecture
 
 All source code lives in `src/`. Template/demo components are preserved in `examples/` for reference.
