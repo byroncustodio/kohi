@@ -3,12 +3,14 @@ module.exports = {
   preset: 'jest-expo',
   setupFilesAfterEnv: ['./jest.setup.ts'],
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/$1',
+    '^@/(.*)$': '<rootDir>/src/$1',
   },
   collectCoverageFrom: [
-    'components/**/*.{ts,tsx}',
-    'hooks/**/*.{ts,tsx}',
-    'constants/**/*.{ts,tsx}',
+    'src/components/**/*.{ts,tsx}',
+    'src/hooks/**/*.{ts,tsx}',
+    'src/constants/**/*.{ts,tsx}',
+    'src/services/**/*.{ts,tsx}',
+    'src/providers/**/*.{ts,tsx}',
     '!**/__tests__/**',
   ],
 };

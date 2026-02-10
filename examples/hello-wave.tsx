@@ -1,3 +1,4 @@
+// Reference-only: template example component (not used in production app)
 import Animated from 'react-native-reanimated';
 
 export function HelloWave() {

@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react-native';
 
-import { ThemedText } from '../themed-text';
+import { ThemedText } from '@/components/ui/themed-text';
 
 describe('ThemedText', () => {
   it('renders text content', () => {
